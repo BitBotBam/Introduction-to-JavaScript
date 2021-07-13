@@ -20,6 +20,12 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 24
+
+if(votingAge => 18){
+  console.log('true');
+}
+  
 
 
 /*
@@ -32,7 +38,16 @@ Do the following:
 
    HINT: no function required
 */
+let numb1 = 2
+let numb2  = 2
 
+if(numb1 <= numb2){
+ numb1 = numb1 + numb2
+}
+else if(numb1 > numb2){
+ numb1 = numb1 + numb2
+ }
+ console.log(numb1)
 
 
 
@@ -47,6 +62,12 @@ Do the following:
 
    HINT: look up the Number method
 */
+var string = '1999'
+
+Number(string)
+
+console.log(string)
+
 
 
 
@@ -60,9 +81,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
+
 }
+console.log(multiply(3, 8));
 
 
 
