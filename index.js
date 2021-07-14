@@ -22,7 +22,7 @@ Do the following:
 
 let votingAge = 24
 
-if(votingAge => 18){
+if(votingAge >= 18){
   console.log('true');
 }
   
@@ -99,9 +99,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  let humanYears = age * 7
+  return humanYears;
 }
+console.log(dogYears(5));
+
 
 
 
@@ -122,7 +125,7 @@ Adult Dogs 1 year and older
    up to 5 lbs - 5% of their body weight
    6 - 10 lbs - 4% of their body weight 
    11 - 15 lbs - 3% of their body weight 
-   > 15lbs - 2% of their body weight 
+   > 15bs - 2% of their body weight 
 
 Puppies less than 1 year
    2 - 4 months 10% of their body weight
@@ -132,9 +135,33 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
-}
+function hungryDog(weight, age){
+if(age >= 1 && weight <= 5){
+return weight * 0.05;}
+else if (age >= 1 && weight >= 6 && weight <= 10){
+return weight * 0.04;}
+else if(age >= 1 && weight >= 11 && weight <= 15 ){
+return weight * 0.03;}
+else if(age >= 1 && weight <=151){
+return weight * 0.02;}
+
+//PUPPIES
+
+else if(age < 0.583 && age >= 0.583 ){
+return weight * 0.04; }
+else if (age < 0.333){
+return weight * 0.05;}
+else if (age < 0.333){
+return weight * 0.10;}
+else {'your off the charts'}
+
+              }
+              console.log('task 3' , hungryDog(15, 1))
+
+
+    
+
+
 
 
 
@@ -159,8 +186,12 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+
+let computer =Math.random()
+
 function game(user, computer){
-  /*add your code here*/
+  
+
 }
 
 
